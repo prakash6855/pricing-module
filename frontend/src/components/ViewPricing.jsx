@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { getPricingConfig } from "../api/pricingApi";
-
+import "../styles/ViewPricing.css";
 function ViewPricing() {
   const [id, setId] = useState("");
   const [pricingConfig, setPricingConfig] = useState(null);
@@ -19,7 +19,7 @@ function ViewPricing() {
   };
 
   return (
-    <div>
+    <div className="view-pricing">
       <h2>View Pricing Configuration</h2>
       <label>
         ID:
@@ -27,7 +27,7 @@ function ViewPricing() {
       </label>
       <button onClick={handleFetch}>Fetch</button>
       {pricingConfig && (
-        <div>
+        <div className="pricing-config">
           <h3>Pricing Configuration</h3>
           <pre>{JSON.stringify(pricingConfig, null, 2)}</pre>
         </div>

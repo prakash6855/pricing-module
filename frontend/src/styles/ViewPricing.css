@@ -1,0 +1,58 @@
+/* Styling for the ViewPricing component container */
+.view-pricing {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 20px;
+  max-width: 900vw;
+}
+
+/* Styling for the input and button elements */
+.view-pricing label {
+  display: block;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.view-pricing input {
+  padding: 8px;
+  margin-top: 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.view-pricing button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-pricing button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the pricing configuration display */
+.view-pricing .pricing-config {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.view-pricing .pricing-config h3 {
+  margin-bottom: 10px;
+}
+
+.view-pricing .pricing-config pre {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}

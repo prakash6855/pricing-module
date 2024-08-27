@@ -1,0 +1,57 @@
+/* Styling for the CalculatePricing component container */
+.calculate-pricing {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Styling for the form within CalculatePricing */
+.calculate-pricing form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.calculate-pricing label {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.calculate-pricing input {
+  padding: 8px;
+  margin-top: 5px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.calculate-pricing button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.calculate-pricing button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the result section */
+.calculate-pricing .result {
+  margin-top: 20px;
+}
+
+.calculate-pricing .result h3 {
+  margin-bottom: 10px;
+}
+
+.calculate-pricing .result p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}

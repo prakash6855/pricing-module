@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { createPricingConfig } from "../api/pricingApi";
+import "../styles/CreatePricing.css";
 
 function CreatePricing() {
   const [formData, setFormData] = useState({
@@ -7,7 +8,6 @@ function CreatePricing() {
     distanceAdditionalPrice: "",
     timeMultiplierFactor: "",
     waitingCharges: "",
-    createdBy: "",
   });
 
   const handleChange = (e) => {
@@ -18,15 +18,15 @@ function CreatePricing() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const result = await createPricingConfig(formData);
-      alert("Pricing configuration created: " + JSON.stringify(result));
+      await createPricingConfig(formData);
+      alert("Pricing configuration created successfully.");
     } catch (error) {
       console.error("Error creating pricing config:", error);
     }
   };
 
   return (
-    <div>
+    <div className="create-pricing">
       <h2>Create Pricing Configuration</h2>
       <form onSubmit={handleSubmit}>
         <label>
@@ -62,15 +62,6 @@ function CreatePricing() {
             type="text"
             name="waitingCharges"
             value={formData.waitingCharges}
-            onChange={handleChange}
-          />
-        </label>
-        <label>
-          Created By:
-          <input
-            type="text"
-            name="createdBy"
-            value={formData.createdBy}
             onChange={handleChange}
           />
         </label>

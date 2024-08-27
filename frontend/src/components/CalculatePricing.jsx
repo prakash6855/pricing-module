@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { calculatePricing } from "../api/pricingApi";
+import "../styles/CalculatePricing.css";
 
 function CalculatePricing() {
   const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ function CalculatePricing() {
   };
 
   return (
-    <div>
+    <div className="calculate-pricing">
       <h2>Calculate Pricing</h2>
       <form onSubmit={handleSubmit}>
         <label>
@@ -68,7 +69,7 @@ function CalculatePricing() {
         <button type="submit">Calculate</button>
       </form>
       {result && (
-        <div>
+        <div className="result">
           <h3>Calculation Result</h3>
           <p>Total Price: ${result.totalPrice}</p>
         </div>

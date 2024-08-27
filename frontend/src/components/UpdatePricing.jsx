@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { updatePricingConfig } from "../api/pricingApi";
+import "../styles/UpdatePricing.css";
 
 function UpdatePricing() {
   const [id, setId] = useState("");
@@ -31,7 +32,7 @@ function UpdatePricing() {
   };
 
   return (
-    <div>
+    <div className="update-pricing">
       <h2>Update Pricing Configuration</h2>
       <form onSubmit={handleSubmit}>
         <label>
