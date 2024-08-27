@@ -1,6 +1,3 @@
-Here’s a sample `README.md` for your repository:
-
-```markdown
 # Pricing Module Web Application
 
 ## Overview
