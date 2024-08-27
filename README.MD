@@ -164,7 +164,6 @@ yarn test
 
 
 
-```
 
 ### Key Sections:
 
@@ -177,4 +176,3 @@ yarn test
 - **License**: Licensing information for the project.
 - **Acknowledgements**: Credits and inspirations for the project.
 
-Feel free to adjust the details, such as repository URL, API endpoints, and instructions, to fit your specific setup.
